@@ -1,0 +1,95 @@
+configVersion: 1.0.0
+componentName: rcon
+coreVersion: 5.9.0
+device: PIC32MM0064GPL020
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: rcon
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    RCON_CAUSE_0:
+      attributes:
+        id: RCON_CAUSE_0
+        label: Power-on Reset Flag bit
+      type: KeyValueSet
+    RCON_CAUSE_1:
+      attributes:
+        id: RCON_CAUSE_1
+        label: Brown-out Reset Flag bit
+      type: KeyValueSet
+    RCON_CAUSE_10:
+      attributes:
+        id: RCON_CAUSE_10
+        label: ''
+      type: KeyValueSet
+    RCON_CAUSE_11:
+      attributes:
+        id: RCON_CAUSE_11
+        label: ''
+      type: KeyValueSet
+    RCON_CAUSE_2:
+      attributes:
+        id: RCON_CAUSE_2
+        label: Wake From Idle Flag bit
+      type: KeyValueSet
+    RCON_CAUSE_3:
+      attributes:
+        id: RCON_CAUSE_3
+        label: Wake From Sleep Flag bit
+      type: KeyValueSet
+    RCON_CAUSE_4:
+      attributes:
+        id: RCON_CAUSE_4
+        label: Watchdog Timer Time-out Flag bit
+      type: KeyValueSet
+    RCON_CAUSE_5:
+      attributes:
+        id: RCON_CAUSE_5
+        label: Software Reset Flag bit
+      type: KeyValueSet
+    RCON_CAUSE_6:
+      attributes:
+        id: RCON_CAUSE_6
+        label: External Reset Pin Flag bit
+      type: KeyValueSet
+    RCON_CAUSE_7:
+      attributes:
+        id: RCON_CAUSE_7
+        label: Configuration Mismatch Reset Flag bit
+      type: KeyValueSet
+    RCON_CAUSE_8:
+      attributes:
+        id: RCON_CAUSE_8
+        label: ''
+      type: KeyValueSet
+    RCON_CAUSE_9:
+      attributes:
+        id: RCON_CAUSE_9
+        label: ''
+      type: KeyValueSet
+    RCON_CAUSE_COUNT:
+      attributes:
+        id: RCON_CAUSE_COUNT
+        label: RCON_CAUSE_COUNT
+      type: Integer
+    RCON_ENABLE:
+      attributes:
+        id: RCON_ENABLE
+        label: Use Resets ?
+      type: Boolean
+    RCON_INSTANCE_NAME:
+      attributes:
+        id: RCON_INSTANCE_NAME
+        label: RCON_INSTANCE_NAME
+      type: String
+  userData: {}

@@ -1,0 +1,52 @@
+configVersion: 1.0.0
+coreVersion: 5.9.0
+spaHostVersion: 1.3.0
+device: PIC32MM0064GPL020
+deviceLibrary: {}
+groupModules: []
+modules:
+- core
+- dfp
+- power
+- rcon
+generatedFileHashHistoryMap:
+- file: ..\src\config\default\definitions.h
+  hash: f5d9f3a3f21a95115f97b5ea809f594d0321423a3610055023a8b34955bacb11
+- file: ..\src\config\default\device.h
+  hash: 4d4341a6f9628cea0bf73f980b639f7cb81089e55a60ad7e434be2a71e477442
+- file: ..\src\config\default\exceptions.c
+  hash: df6a7db71f29db985de306abd7b848a24111cef6398ccfb9479449ae4fbc069d
+- file: ..\src\config\default\initialization.c
+  hash: 2d8d0088e4c74ca32338935428dadbe42000fe14e2cf08c8057af2e092e2c7f7
+- file: ..\src\config\default\interrupts.c
+  hash: 896c121115784be0557e93402538b859fb34b5da645b34d7b5bb64f420ccdb94
+- file: ..\src\config\default\interrupts.h
+  hash: e23c6ed09a86feee815de5ad261112a0f4a964599bf5b95d5d8a4b0b589ddd65
+- file: ..\src\config\default\p32MM0064GPL020.ld
+  hash: 71fb72843d0e291f775b5b1260200772e4da9c6a173f7ffab495312aa149ed40
+- file: ..\src\config\default\peripheral\clk\plib_clk.c
+  hash: 56464964fa95461b687fcd3e107affac0a1eedc786fcd7c44e118a9ec58efae5
+- file: ..\src\config\default\peripheral\clk\plib_clk.h
+  hash: 35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255
+- file: ..\src\config\default\peripheral\evic\plib_evic.c
+  hash: d993086f42201092965aa79cd8e6d8f9243942646bc60f23b0684bc93c1fc2f3
+- file: ..\src\config\default\peripheral\evic\plib_evic.h
+  hash: 6835f871fa3f189de7abcaa67b01a5af9fe7b71b50d5616595097447227b80df
+- file: ..\src\config\default\peripheral\gpio\plib_gpio.c
+  hash: 0d18490dd3a732c582625efb75e675873b938ae6101b990774318661b39b68b2
+- file: ..\src\config\default\peripheral\gpio\plib_gpio.h
+  hash: 7d9f1b3bd4b698307b8a43fa4b4d8c3c521bbc2f64b5186137cb82a215f16aef
+- file: ..\src\config\default\peripheral\power\plib_power.c
+  hash: e6df2eb8c709e8d21c6422ee8e0ff50e65d5a73028d795d6bc94609d95f32161
+- file: ..\src\config\default\peripheral\power\plib_power.h
+  hash: 6cadd0c6bf0522ef1359631ad2b3f0d593805fad50d604bb753afa6b6093f7ba
+- file: ..\src\config\default\peripheral\rcon\plib_rcon.c
+  hash: 4bd00d8b90d58fd729f6ac48a9578b861743231ca040f2be31afb6ed0384e34e
+- file: ..\src\config\default\peripheral\rcon\plib_rcon.h
+  hash: 83989d4e31666ba4c0a1eadf82290ac1ac41ed7a778d0c5c7fd6e55af768ce1c
+- file: ..\src\config\default\stdio\xc32_monitor.c
+  hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
+- file: ..\src\config\default\toolchain_specifics.h
+  hash: f6f3282ecb4ad8b5ba3487b7d7b8f6cfa3f977240726af07eaab058caf904381
+- file: ..\src\main.c
+  hash: d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5

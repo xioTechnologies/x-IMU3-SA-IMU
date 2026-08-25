@@ -1,0 +1,9 @@
+**/*.X/**
+!**/*.X/*_default
+!**/*.X/*_default/*.mc4
+!**/*.X/*_default/components
+!**/*.X/*_default/components/*
+!**/*.X/Makefile
+!**/*.X/nbproject
+!**/*.X/nbproject/configurations.xml
+!**/*.X/nbproject/project.xml
