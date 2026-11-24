@@ -68,8 +68,15 @@ static inline __attribute__((always_inline)) void WriteFloat(void* const destina
         absolute = -value;
     }
 
+    // Round to four decimal places
+    uint32_t integer = (uint32_t) absolute;
+    uint32_t fraction = (uint32_t) (((absolute - (float) integer) * 10000.0f) + 0.5f);
+    if (fraction >= 10000) {
+        integer++;
+        fraction -= 10000;
+    }
+
     // Integer part
-    const uint32_t integer = (uint32_t) absolute;
     if (integer == 0) {
         WriteChar(destination, destinationSize, destinationIndex, '0');
     } else {
@@ -86,7 +93,6 @@ static inline __attribute__((always_inline)) void WriteFloat(void* const destina
     }
 
     // Fractional part
-    const uint32_t fraction = (uint32_t) (((absolute - (float) integer) * 10000.0f) + 0.5f);
     WriteChar(destination, destinationSize, destinationIndex, '.');
     WriteChar(destination, destinationSize, destinationIndex, '0' + (char) (fraction / 1000));
     WriteChar(destination, destinationSize, destinationIndex, '0' + (char) ((fraction / 100) % 10));
