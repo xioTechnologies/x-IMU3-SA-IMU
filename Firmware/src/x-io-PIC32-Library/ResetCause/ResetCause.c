@@ -15,7 +15,7 @@
 // Functions
 
 /**
- * @brief Gets the reset cause. This function can only be called once.
+ * @brief Returns the reset cause. This function can only be called once.
  * @return Reset cause.
  */
 RCON_RESET_CAUSE ResetCauseGet(void) {
@@ -29,6 +29,7 @@ RCON_RESET_CAUSE ResetCauseGet(void) {
 
 /**
  * @brief Prints the reset cause.
+ * @param cause Reset cause.
  */
 void ResetCausePrint(const RCON_RESET_CAUSE cause) {
     printf("Reset ");

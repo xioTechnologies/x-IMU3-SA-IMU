@@ -15,11 +15,11 @@
 //------------------------------------------------------------------------------
 // Definitions
 
-#define UART1_READ_BUFFER_SIZE             		(8)
-#define UART1_WRITE_BUFFER_SIZE            		(1024)
+#define UART1_READ_BUFFER_SIZE                  (8)
+#define UART1_WRITE_BUFFER_SIZE                 (1024)
 
-#define UART2_READ_BUFFER_SIZE             		(8)
-#define UART2_WRITE_BUFFER_SIZE            		(1024)
+#define UART2_READ_BUFFER_SIZE                  (8)
+#define UART2_WRITE_BUFFER_SIZE                 (1024)
 
 #endif
 
