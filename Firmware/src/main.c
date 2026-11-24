@@ -16,6 +16,7 @@
 #include "AsciiMessage/AsciiMessage.h"
 #include "definitions.h"
 #include "Icm/Icm.h"
+#include <inttypes.h>
 #include "Periodic.h"
 #include "ResetCause/ResetCause.h"
 #include <stdbool.h>
@@ -39,11 +40,11 @@ int main(void) {
     Uart1Initialise(&uartSettingsDefault);
     Uart2Initialise(&uartSettingsDefault);
 
-    // Print start up message
+    // Print startup message
     TimerDelayMilliseconds(500);
     ResetCausePrint(ResetCauseGet());
     const char startupMessage[] = "x-IMU3-SA-IMU v1.0.0\n";
-    printf(startupMessage);
+    printf("%s", startupMessage);
     Uart1Write(startupMessage, strlen(startupMessage));
 
     // Initialise ICM
@@ -62,15 +63,15 @@ int main(void) {
         char asciiMessage[128];
         IcmData icmData;
         while ((Uart1AvailableWrite() > sizeof (asciiMessage)) && (IcmGetData(&icmData) == IcmResultOk)) {
-            const size_t messageLength = AsciiMessageFloats(asciiMessage, sizeof (asciiMessage), icmData.floatArray, 6);
-            Uart1Write(asciiMessage, messageLength);
+            const size_t messageSize = AsciiMessageFloats(asciiMessage, sizeof (asciiMessage), icmData.floatArray, 6);
+            Uart1Write(asciiMessage, messageSize);
         }
 
         // ICM buffer overflow
         if (PERIODIC_POLL(1.0f)) {
             const uint32_t overflow = IcmBufferOverflow();
             if (overflow > 0) {
-                printf("Buffer overflow: %u samples lost\n", overflow);
+                printf("Buffer overflow: %" PRIu32 " samples lost\n", overflow);
             }
         }
 

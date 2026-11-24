@@ -174,7 +174,7 @@ static int LowPassFilterToLpfbwSel(const IcmLowPassFilter lowPassFilter) {
         case IcmLowPassFilter128:
             return 0b110;
     }
-    return 0b000; // avoid compiler warning
+    return 0; // unreachable code: -Werror=switch
 }
 
 /**
@@ -205,7 +205,7 @@ static int SampleRateToOdr(const IcmSampleRate sampleRate) {
         case IcmSampleRate6400Hz:
             return 0b0011;
     }
-    return 0b0110; // avoid compiler warning
+    return 0; // unreachable code: -Werror=switch
 }
 
 /**
